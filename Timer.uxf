@@ -77,4 +77,24 @@ Braeden Moffat
 bg=red</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>0</y>
+      <w>280</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>IntNodeArray
+bg=orange
+-
+- head : IntNode*
+- size : int
+-
++IntNodeArray(int) : constructor
++getSize() : int
++getFromIndex(int) : int
++setAtIndex(int index, int value) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

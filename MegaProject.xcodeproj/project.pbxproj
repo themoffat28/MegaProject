@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C918BF0F1E48D5EE0073CE41 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C918BF0D1E48D5EE0073CE41 /* IntNode.cpp */; };
+		C9DEADA21E4B726300948D3F /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DEADA01E4B726300948D3F /* IntNodeArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 		C918BF031E48D40B0073CE41 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		C918BF0D1E48D5EE0073CE41 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		C918BF0E1E48D5EE0073CE41 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		C9DEADA01E4B726300948D3F /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntNodeArray.cpp; sourceTree = "<group>"; };
+		C9DEADA11E4B726300948D3F /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntNodeArray.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 			children = (
 				C918BF0D1E48D5EE0073CE41 /* IntNode.cpp */,
 				C918BF0E1E48D5EE0073CE41 /* IntNode.hpp */,
+				C9DEADA01E4B726300948D3F /* IntNodeArray.cpp */,
+				C9DEADA11E4B726300948D3F /* IntNodeArray.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C918BF0F1E48D5EE0073CE41 /* IntNode.cpp in Sources */,
+				C9DEADA21E4B726300948D3F /* IntNodeArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +270,7 @@
 				C918BF0C1E48D40B0073CE41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

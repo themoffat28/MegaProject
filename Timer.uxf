@@ -97,4 +97,30 @@ bg=orange
 +setAtIndex(int index, int value) : void</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>940</x>
+      <y>0</y>
+      <w>430</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Node &lt;Type&gt;
+bg=magenta
+-
+-nodeData : Type
+-nodePointer : Node&lt;Type&gt;
+-
+Constructors:
++Node&lt;Type&gt;() : constructor
++Node&lt;Type&gt;(Type value) : constructor
++Node&lt;Type&gt;(Type value, Node&lt;Type&gt;* next) : constructor
+
+Accessors:
++ getNodeData() : Type
++ getNodePointer() : Node&lt;Type&gt;*
++ setNodeData(Type value) : void
++ setNodePointer(Node&lt;Type&gt; * next) : void </panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

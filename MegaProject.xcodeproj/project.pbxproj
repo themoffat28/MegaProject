@@ -34,6 +34,7 @@
 		C9DEADA31E4B7D3700948D3F /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		C9DEADA51E4B7DD400948D3F /* StructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StructureController.cpp; sourceTree = "<group>"; };
 		C9DEADA61E4B7DD400948D3F /* StructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StructureController.hpp; sourceTree = "<group>"; };
+		C9EB3E2B1E5208EF00035A48 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 				C918BF0E1E48D5EE0073CE41 /* IntNode.hpp */,
 				C9DEADA01E4B726300948D3F /* IntNodeArray.cpp */,
 				C9DEADA11E4B726300948D3F /* IntNodeArray.hpp */,
+				C9EB3E2B1E5208EF00035A48 /* Node.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";

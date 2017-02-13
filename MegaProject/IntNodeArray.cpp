@@ -17,7 +17,8 @@ IntNodeArray :: IntNodeArray(int size)
     
     this->head = new IntNode();
     
-    for(int index = 0; index < size; index++)
+    //Starting at 1 because head already points to a valid IntNode.
+    for(int index = 1; index < size; index++)
     {
         IntNode * currentNode = new IntNode();
         currentNode->setNodePointer(head);
@@ -52,4 +53,9 @@ void IntNodeArray :: setAtIndex(int index, int value)
     }
     
     current->setNodeData(value);
+}
+
+int IntNodeArray :: getSize()
+{
+    return size;
 }

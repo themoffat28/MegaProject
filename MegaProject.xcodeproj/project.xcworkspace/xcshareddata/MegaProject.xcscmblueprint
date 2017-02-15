@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "70E9F1E8C469C88530EFD7098D6398677F8845BE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1A4B46426D2554E1C3AD6AA3AAD645C4C8A0A03C" : 9223372036854775807,
+    "70E9F1E8C469C88530EFD7098D6398677F8845BE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0793EC8A-62B0-4613-9599-4E2E8E537F9D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1A4B46426D2554E1C3AD6AA3AAD645C4C8A0A03C" : "Second%20C++%20Project\/",
+    "70E9F1E8C469C88530EFD7098D6398677F8845BE" : "MegaProject\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MegaProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MegaProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/themoffat28\/Second-C-Project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A4B46426D2554E1C3AD6AA3AAD645C4C8A0A03C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/themoffat28\/MegaProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70E9F1E8C469C88530EFD7098D6398677F8845BE"
+    }
+  ]
+}

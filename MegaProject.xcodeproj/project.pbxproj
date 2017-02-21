@@ -27,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C900DC641E5CA3EA0059E135 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
 		C918BF031E48D40B0073CE41 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		C918BF0D1E48D5EE0073CE41 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		C918BF0E1E48D5EE0073CE41 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 				C918BF0E1E48D5EE0073CE41 /* IntNode.hpp */,
 				C9DEADA01E4B726300948D3F /* IntNodeArray.cpp */,
 				C9DEADA11E4B726300948D3F /* IntNodeArray.hpp */,
+				C900DC641E5CA3EA0059E135 /* List.hpp */,
 				C9EB3E2B1E5208EF00035A48 /* Node.hpp */,
 				C969A6B21E54B296000620C8 /* Array.hpp */,
 				C969A6B91E54B941000620C8 /* Timer.cpp */,

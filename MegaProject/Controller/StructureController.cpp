@@ -86,4 +86,6 @@ void StructureController :: testAdvancedFeatures()
     
     cout << "The following should match:" << endl;
     cout << words.getFromIndex(0) << " should be the same as " << copiedWords.getFromIndex(0) << endl;
+    
+    copiedWords.setAtIndex(3, "Contents of copied Array have been changed");
 }

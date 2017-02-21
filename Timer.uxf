@@ -126,23 +126,60 @@ Accessors:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
+      <x>0</x>
       <y>250</y>
-      <w>290</w>
-      <h>240</h>
+      <w>480</w>
+      <h>260</h>
     </coordinates>
     <panel_attributes>Array&lt;Type&gt;
 -
 -front : Node&lt;Type&gt; *
 -size : int
 -
++Array() : default constructor
 +Array&lt;Type&gt;(int size) : constructor
+
++~Array&lt;Type&gt;() : destructor
++Array&lt;Type&gt;(const Array&lt;Type&gt; &amp; toBeCopied) : copy constructor
+
 +getSize() : int
++getFront() const : Node&lt;Type&gt;*
+
 +getFromIndex(int index) : Type
 +setAtIndex(int index, Type value) : void
 
 
 bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>250</y>
+      <w>440</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Model :: List&lt;Type&gt;
+-
+-size : int
+-front : Node&lt;Type&gt; *
+-
+//Constructors
++List&lt;Type&gt;() : constructor
++List&lt;Type&gt;(const List&lt;Type&gt; &amp; source) : copy constructor
++ ~List&lt;Type&gt;() : destructor
+
+//Methods
++addAtIndex(int index, Type value) : void
++add(Type value) : void
++remove(int index) : Type
++setAtIndex(int index, Type data) : Type
++contains(Type data) : bool
++getSize() const : int
++getFront() const : int
++getFront() const : Node&lt;Type&gt; *
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

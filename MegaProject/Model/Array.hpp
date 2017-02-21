@@ -93,13 +93,19 @@ void Array<Type> :: setAtIndex(int index, Type value)
         current = current = current->getNodePointer();
     }
     
-    current->serNodeData(value);
+    current->setNodeData(value);
 }
 
 template <class Type>
 int Array<Type> :: getSize() const
 {
     return size;
+}
+
+template <class Type>
+Node<Type> * Array<Type> :: getFront() const
+{
+    return front;
 }
 
 template <class Type>

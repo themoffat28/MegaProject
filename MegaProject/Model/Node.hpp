@@ -68,7 +68,7 @@ void Node<Type> :: setNodeData(Type nodeData)
 template <class Type>
 void Node<Type> :: setNodePointer(Node<Type> * next)
 {
-    this->NodePointer = next;
+    this->nodePointer = next;
 }
 
 

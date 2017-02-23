@@ -89,4 +89,35 @@ void List<Type> :: addEnd(Type data)
     size++;
 }
 
+template <class Type>
+void List<Type> :: addAtIndex(int index, type value)
+{
+    assert(index >= 0 && index <= size);
+    if(index == 0)
+    {
+        addFront(value);
+    }
+    else if(index == size)
+    {
+        addEnd(value);
+    }
+    else
+    {
+        Node<Type> * insertedNode = new Node<Type>(value);
+        Node<Type> * current = front;
+        Node<Type> * previous = nullptr;
+        
+        for(int position = 0; position < index; position++)
+        {
+            previous = current;
+            current = current->getNodePointer();
+        }
+        previous->setNdoePointer(insertedNode);
+        insertedNode->setNodePointer(current);
+        
+        size++;
+    }
+    
+}
+
 #endif /* List_h */

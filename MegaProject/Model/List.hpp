@@ -19,6 +19,7 @@ class Array
 private:
     int size;
     Node<Type> * front;
+    Node<Type> * end;
 public:
     //Constructor
     List<Type>();
@@ -36,9 +37,56 @@ public:
     Type setAtIndex(int index, Type data);
     bool contains(Type data)
     int getSize() const;
-    int getFront() const;
     Node<Type> * getFront() const;
+    Node<Type> * getEnd() const;
     
 };
+
+template <class Type>
+List<Type> :: List()
+{
+    this->size = 0;
+    this->front = nullptr;
+    this->end = nullptr;
+}
+
+template <class Type>
+void List<Type> :: addFront(Type value)
+{
+    if(size == 0)
+    {
+        Node<Type> * first = new Node(value);
+        this->front = first;
+        this->end = first;
+    }
+    else
+    {
+        Node<Type> * newFirst = new Node<Type>();
+        newFirst->setNodeData(value);
+        newFirst->setNodeData(front);
+        //or
+        //Node<Type> * newFirst = new Node<Type>(value, front);
+        front = newFirst;
+    }
+    
+    size++;
+}
+
+template <class Type>
+void List<Type> :: addEnd(Type data)
+{
+    Node<Type> * end = new Node<Type>(data);
+    if(size == 0)
+    {
+        this->front = added;
+        this->end = added;
+    }
+    else
+    {
+        end->setNodePointer(added);
+        this->end = added;
+    }
+    size++;
+}
 
 #endif /* List_h */

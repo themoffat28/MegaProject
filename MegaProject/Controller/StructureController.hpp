@@ -11,6 +11,7 @@
 
 #include "../Model/Node.hpp"
 #include "../Model/Array.hpp"
+#include "../Model/List.hpp"
 #include <string>
 using namespace std;
 
@@ -25,6 +26,7 @@ private:
     void testIntArray();
     void testArrayTemplate();
     void testAdvancedFeatures();
+    void testListIntro();
 public:
     StructureController();
     void start();

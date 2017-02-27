@@ -13,8 +13,8 @@
 #include "Node.hpp"
 #include <iostream>
 
-tempalate <class Type>
-class Array
+template <class Type>
+class List
 {
 private:
     int size;
@@ -32,10 +32,12 @@ public:
     
     //Methods
     void addAtIndex(int index, Type value);
-    void add(Type value);
+    void addFront(Type value);
+    void addEnd(Type value);
     Type remove(int index);
+    Type getFromIndex (int index);
     Type setAtIndex(int index, Type data);
-    bool contains(Type data)
+    bool contains(Type data);
     int getSize() const;
     Node<Type> * getFront() const;
     Node<Type> * getEnd() const;
@@ -51,11 +53,28 @@ List<Type> :: List()
 }
 
 template <class Type>
+List<Type> :: ~List()
+{
+    Node<Type> * destruction = front;
+    while(front != nullptr)
+    {
+        front = front->getNodePointer();
+        delete destruction;
+        destruction = front;
+    }
+}
+
+template <class Type>
+int List<Type> :: getSize() const
+{
+    return this->size;
+}
+template <class Type>
 void List<Type> :: addFront(Type value)
 {
     if(size == 0)
     {
-        Node<Type> * first = new Node(value);
+        Node<Type> * first = new Node<Type>(value);
         this->front = first;
         this->end = first;
     }
@@ -63,7 +82,7 @@ void List<Type> :: addFront(Type value)
     {
         Node<Type> * newFirst = new Node<Type>();
         newFirst->setNodeData(value);
-        newFirst->setNodeData(front);
+        newFirst->setNodePointer(front);
         //or
         //Node<Type> * newFirst = new Node<Type>(value, front);
         front = newFirst;
@@ -75,7 +94,7 @@ void List<Type> :: addFront(Type value)
 template <class Type>
 void List<Type> :: addEnd(Type data)
 {
-    Node<Type> * end = new Node<Type>(data);
+    Node<Type> * added = new Node<Type>(data);
     if(size == 0)
     {
         this->front = added;
@@ -90,7 +109,7 @@ void List<Type> :: addEnd(Type data)
 }
 
 template <class Type>
-void List<Type> :: addAtIndex(int index, type value)
+void List<Type> :: addAtIndex(int index, Type value)
 {
     assert(index >= 0 && index <= size);
     if(index == 0)
@@ -137,7 +156,7 @@ Type List<Type> :: remove(int index)
     }
     else if(index == size - 1)
     {
-        for(int spot = 0; spot < index spot++)
+        for(int spot = 0; spot < index; spot++)
         {
             previous = current;
             current = current->getNodePointer();
@@ -148,7 +167,7 @@ Type List<Type> :: remove(int index)
     }
     else
     {
-        for(int spot = 0; spot < index spot++)
+        for(int spot = 0; spot < index; spot++)
         {
             previous = current;
             current = current->getNodePointer();
@@ -164,6 +183,23 @@ Type List<Type> :: remove(int index)
     
     size--;
     return removed;
+}
+
+template <class Type>
+Type List<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < size);
+    Type value;
+    
+    Node<Type> * current = front;
+    
+    for(int position = 0; position < index; position++)
+    {
+        current = current->getNodePointer();
+    }
+    
+    value = current->getNodeData();
+    return value;
 }
 
 

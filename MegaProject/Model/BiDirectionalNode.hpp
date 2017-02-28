@@ -30,4 +30,16 @@ public:
     void setPreviousPointer(BiDirectionalNode<Type> * previous);
 }
 
+template <class Type>
+BiDirectionalNode :: BiDirectionalNode() : Node()
+{
+    
+}
+
+template <class Type>
+BiDirectionalNode :: BiDirectionalNode(Type data) : Node(data)
+{
+    
+}
+
 #endif /* BiDirectionalNode_h */

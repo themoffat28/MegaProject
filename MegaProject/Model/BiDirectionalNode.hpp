@@ -70,7 +70,7 @@ void BiDirectionalNode<Type> :: setNextPointer(BiDirectionalNode<Type> * next)
 }
 
 template <class Type>
-void BiDirectionalNode<Type> :: setNextPointer(BiDirectionalNode<Type> * previous)
+void BiDirectionalNode<Type> :: setPreviousPointer(BiDirectionalNode<Type> * previous)
 {
     this->previousPointer = previous;
 }

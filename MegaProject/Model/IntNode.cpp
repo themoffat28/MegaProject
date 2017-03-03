@@ -12,19 +12,19 @@
 IntNode :: IntNode()
 {
     this-> nodeData = -999;
-    this->NodePointer = nullptr;
+    this->NextPointer = nullptr;
 }
 
 IntNode :: IntNode(int data)
 {
     this->nodeData = data;
-    NodePointer = nullptr;
+    NextPointer = nullptr;
 }
 
 IntNode :: IntNode(int nodeData, IntNode * next)
 {
     this->nodeData = nodeData;
-    this->NodePointer = next;
+    this->NextPointer = next;
 }
 
 int IntNode :: getNodeData()
@@ -32,9 +32,9 @@ int IntNode :: getNodeData()
     return nodeData;
 }
 
-IntNode * IntNode :: getNodePointer()
+IntNode * IntNode :: getNextPointer()
 {
-    return NodePointer;
+    return NextPointer;
 }
 
 void IntNode :: setNodeData(int nodeData)
@@ -42,7 +42,7 @@ void IntNode :: setNodeData(int nodeData)
     this->nodeData = nodeData;
 }
 
-void IntNode :: setNodePointer(IntNode * next)
+void IntNode :: setNextPointer(IntNode * next)
 {
-    this->NodePointer = next;
+    this->NextPointer = next;
 }

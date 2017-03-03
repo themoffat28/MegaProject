@@ -58,7 +58,7 @@ List<Type> :: ~List()
     Node<Type> * destruction = front;
     while(front != nullptr)
     {
-        front = front->getNodePointer();
+        front = front->getNextPointer();
         delete destruction;
         destruction = front;
     }
@@ -82,7 +82,7 @@ void List<Type> :: addFront(Type value)
     {
         Node<Type> * newFirst = new Node<Type>();
         newFirst->setNodeData(value);
-        newFirst->setNodePointer(front);
+        newFirst->setNextPointer(front);
         //or
         //Node<Type> * newFirst = new Node<Type>(value, front);
         front = newFirst;
@@ -102,7 +102,7 @@ void List<Type> :: addEnd(Type data)
     }
     else
     {
-        end->setNodePointer(added);
+        end->setNextPointer(added);
         this->end = added;
     }
     size++;
@@ -129,10 +129,10 @@ void List<Type> :: addAtIndex(int index, Type value)
         for(int position = 0; position < index; position++)
         {
             previous = current;
-            current = current->getNodePointer();
+            current = current->getNextPointer();
         }
         previous->setNdoePointer(insertedNode);
-        insertedNode->setNodePointer(current);
+        insertedNode->setNextPointer(current);
         
         size++;
     }
@@ -152,17 +152,17 @@ Type List<Type> :: remove(int index)
     if(index == 0)
     {
         toBeRemoved = front;
-        front = front->getNodePointer();
+        front = front->getNextPointer();
     }
     else if(index == size - 1)
     {
         for(int spot = 0; spot < index; spot++)
         {
             previous = current;
-            current = current->getNodePointer();
+            current = current->getNextPointer();
         }
         toBeRemoved = current;
-        previous->setNodePointer(nullptr);
+        previous->setNextPointer(nullptr);
         this->end = previous;
     }
     else
@@ -170,12 +170,12 @@ Type List<Type> :: remove(int index)
         for(int spot = 0; spot < index; spot++)
         {
             previous = current;
-            current = current->getNodePointer();
+            current = current->getNextPointer();
         }
         
         toBeRemoved = current;
-        current = toBeRemoved->getNodePointer();
-        previous->setNodePointer(current);
+        current = toBeRemoved->getNextPointer();
+        previous->setNextPointer(current);
     }
     removed = toBeRemoved->getNodeData();
     
@@ -195,7 +195,7 @@ Type List<Type> :: getFromIndex(int index)
     
     for(int position = 0; position < index; position++)
     {
-        current = current->getNodePointer();
+        current = current->getNextPointer();
     }
     
     value = current->getNodeData();

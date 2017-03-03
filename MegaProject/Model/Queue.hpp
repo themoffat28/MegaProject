@@ -9,5 +9,11 @@
 #ifndef Queue_h
 #define Queue_h
 
+#include "DoublyLinkedList.hpp"
 
+template <class Type>
+class Queue : public DoublyLinkedList<Type>
+{
+    
+};
 #endif /* Queue_h */

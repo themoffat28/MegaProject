@@ -31,6 +31,8 @@
 		C918BF031E48D40B0073CE41 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		C918BF0D1E48D5EE0073CE41 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		C918BF0E1E48D5EE0073CE41 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		C92F77B61E69C92800890093 /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
+		C92F77B71E69C95900890093 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		C9656A8D1E648DE80040CDAE /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
 		C969A6B21E54B296000620C8 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		C969A6B91E54B941000620C8 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = "../../Second C++ Project/Second C++ Project/Model/Timer.cpp"; sourceTree = "<group>"; };
@@ -88,16 +90,15 @@
 				C969A6B21E54B296000620C8 /* Array.hpp */,
 				C9656A8D1E648DE80040CDAE /* BiDirectionalNode.hpp */,
 				C9CDC74B1E67285800FB9F45 /* DoublyLinkedList.hpp */,
+				C92F77B51E69C8FB00890093 /* Inherits From DoublyLinked */,
 				C918BF0D1E48D5EE0073CE41 /* IntNode.cpp */,
 				C918BF0E1E48D5EE0073CE41 /* IntNode.hpp */,
 				C9DEADA01E4B726300948D3F /* IntNodeArray.cpp */,
 				C9DEADA11E4B726300948D3F /* IntNodeArray.hpp */,
 				C900DC641E5CA3EA0059E135 /* List.hpp */,
 				C9EB3E2B1E5208EF00035A48 /* Node.hpp */,
-				C9CDC74C1E672E5900FB9F45 /* Stack.hpp */,
 				C969A6B91E54B941000620C8 /* Timer.cpp */,
 				C969A6BA1E54B941000620C8 /* Timer.hpp */,
-				C9CDC74D1E672F0300FB9F45 /* Queue.hpp */,
 				C918BF041E48D40B0073CE41 /* Products */,
 			);
 			name = Model;
@@ -111,6 +112,17 @@
 				C969A6BE1E54BB35000620C8 /* StructureController.hpp */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		C92F77B51E69C8FB00890093 /* Inherits From DoublyLinked */ = {
+			isa = PBXGroup;
+			children = (
+				C92F77B71E69C95900890093 /* CircularList.hpp */,
+				C92F77B61E69C92800890093 /* DoubleList.hpp */,
+				C9CDC74C1E672E5900FB9F45 /* Stack.hpp */,
+				C9CDC74D1E672F0300FB9F45 /* Queue.hpp */,
+			);
+			name = "Inherits From DoublyLinked";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

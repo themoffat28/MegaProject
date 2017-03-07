@@ -18,8 +18,72 @@ private:
     
 public:
     Queue();
+    ~Queue();
     void add(Type data);
+    Type remove(int index);
+    void enqueue(Type data);
+    Type dequeue();
+    Type peek();
 };
+
+template <class Type>
+Queue<Type> :: Queue() : DoublyLinkedList<Type>()
+{
+    
+}
+
+//Same destructor as list, array, stack... since it is a linear data structure.
+template <class Type>
+Queue<Type> :: ~Queue()
+{
+    BiDirectionalNode<Type> * remove = this->getFront();
+    while(this->getFront() != nullptr)
+    {
+        this->setFront(this->getFront()->getNextPointer();
+        delete remove;
+        remove = this->getFront;
+    }
+}
+
+//Call enqueue method. Method implemented to ensure the child class is NOT abstract.
+template <class Type>
+void Queue<Type> :: add(Type value)
+{
+    enqueue(value);
+}
+
+//1.Create a node.
+//2.If size == 0, adjust front to point to new node.
+//3.Else, add new node to end's next.
+//4.Move end to new node.
+//5.Adjust size + 1.
+template <class Type>
+void Queue<Type> :: enqueue(Type insertedValue)
+{
+    BiDirectionalNode<Type> * added = new BiDirectionalNode<Type>(insertedValue);
+    
+    if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
+    {
+        this->setFront(added);
+    }
+    else
+    {
+        this->getEnd()->setNextPointer(added);
+        added->setPreviousPointer(this->getEnd());
+    }
+    this->setEnd(added);
+    this->setSize(this->getSize() + 1);
+}
+
+//1.Check valid index and size.
+//2.Call dequeue.
+//Implemented to avoid abstract status.
+template <class Type>
+Type Queue<Type> :: remove(int index)
+{
+    assert(index == 0 && this->getSize() > 0);
+    return dequeue();
+}
 
 //1.Assert size is valid.
 //2.Get data from front node.

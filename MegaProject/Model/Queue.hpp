@@ -39,7 +39,7 @@ Queue<Type> :: ~Queue()
     BiDirectionalNode<Type> * remove = this->getFront();
     while(this->getFront() != nullptr)
     {
-        this->setFront(this->getFront()->getNextPointer();
+        this->setFront(this->getFront()->getNextPointer());
         delete remove;
         remove = this->getFront;
     }
@@ -124,6 +124,6 @@ template <class Type>
 Type Queue<Type> :: peek()
 {
     assert(this->getSize() > 0);
-    return this->getFront()->getNodeData():
+    return this->getFront()->getNodeData();
 }
 #endif /* Queue_h */

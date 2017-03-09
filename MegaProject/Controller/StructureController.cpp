@@ -8,7 +8,7 @@
 
 #include "IntNodeArray.hpp"
 #include "StructureController.hpp"
-#include "../Model/Timer.hpp"
+#include "Timer.hpp"
 #include <iostream>
 
 using namespace std;
@@ -69,6 +69,11 @@ void StructureController :: start()
     testIntArray();
     cout << "IntNodeArray test complete." << endl;
     testNodeTypes();
+    
+    cout << "Testing methods..." << endl;
+    testListTiming();
+    cout << "Finished Testing" << endl;
+
 }
 
 void StructureController :: testAdvancedFeatures()
@@ -105,3 +110,54 @@ void StructureController :: testListIntro()
     
     cout << "Size should read 3 and is " << sample.getSize() << endl;
 }
+
+void StructureController :: testDestructor()
+{
+    
+}
+
+void StructureController :: testDoubleLists()
+{
+    
+}
+
+void StructureController :: testListTiming()
+{
+    DoubleList<int> timingList;
+    for(int index = 0; index < 10000; index++)
+    {
+        timingList.add(rand());
+    }
+    
+    long slowTime [1000];
+    long fastTime [1000];
+    double averageSlow = 0.00, averageFast = 0.00;
+    Timer doubleTimer;
+    
+    for(int index = 0; index < 1000; index++)
+    {
+        int randomIndex = rand() % 10000;
+        doubleTimer.startTimer();
+        timingList.getFromIndex(randomIndex);
+        doubleTimer.stopTimer();
+        slowTime[index] = doubleTimer.getExecutionTimeInMicroseconds();
+        
+        doubleTimer.startTimer();
+        timingList.getFromIndexFast(randomIndex);
+        doubleTimer.stopTimer();
+        fastTime[index] = doubleTimer.getExecutionTimeInMicroseconds();
+        
+        averageSlow += slowTime[index];
+        averageFast += fastTime[index];
+    }
+    
+    averageSlow = averageSlow/1000;
+    averageFast = averageFast/1000;
+    
+    cout << "The average speed for the getFromIndex method was: " << averageSlow << " microseconds" << endl;
+    cout << "The average speed for the getFromIndexFast method was: " << averageFast << " microseconds" << endl;
+}
+
+
+
+

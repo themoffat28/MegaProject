@@ -41,7 +41,7 @@ Queue<Type> :: ~Queue()
     {
         this->setFront(this->getFront()->getNextPointer());
         delete remove;
-        remove = this->getFront;
+        remove = this->getFront();
     }
 }
 
@@ -109,8 +109,8 @@ Type Queue<Type> :: dequeue()
     else
     {
         this->setFront(removeMe->getNextPointer());
+        this->getFront()->setPreviousPointer(nullptr);
     }
-    this->setFront()->setPreviousPointer(nullptr);
     
     delete removeMe;
     this->setSize(this->getSize() -1);

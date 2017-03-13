@@ -12,6 +12,7 @@
 		C969A6BF1E54BB35000620C8 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C969A6BC1E54BB35000620C8 /* Runner.cpp */; };
 		C969A6C01E54BB35000620C8 /* StructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C969A6BD1E54BB35000620C8 /* StructureController.cpp */; };
 		C9DEADA21E4B726300948D3F /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DEADA01E4B726300948D3F /* IntNodeArray.cpp */; };
+		C9F63EE81E76DA4C0025AC7C /* Meme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F63EE61E76DA4C0025AC7C /* Meme.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		C9DEADA01E4B726300948D3F /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntNodeArray.cpp; sourceTree = "<group>"; };
 		C9DEADA11E4B726300948D3F /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntNodeArray.hpp; sourceTree = "<group>"; };
 		C9EB3E2B1E5208EF00035A48 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
+		C9F63EE61E76DA4C0025AC7C /* Meme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Meme.cpp; path = Model/Meme.cpp; sourceTree = "<group>"; };
+		C9F63EE71E76DA4C0025AC7C /* Meme.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Meme.hpp; path = Model/Meme.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				C969A6B21E54B296000620C8 /* Array.hpp */,
 				C9656A8D1E648DE80040CDAE /* BiDirectionalNode.hpp */,
 				C9CDC74B1E67285800FB9F45 /* DoublyLinkedList.hpp */,
+				C9F63EE61E76DA4C0025AC7C /* Meme.cpp */,
+				C9F63EE71E76DA4C0025AC7C /* Meme.hpp */,
 				C92F77B51E69C8FB00890093 /* Inherits From DoublyLinked */,
 				C918BF0D1E48D5EE0073CE41 /* IntNode.cpp */,
 				C918BF0E1E48D5EE0073CE41 /* IntNode.hpp */,
@@ -185,6 +190,7 @@
 				C918BF0F1E48D5EE0073CE41 /* IntNode.cpp in Sources */,
 				C969A6BF1E54BB35000620C8 /* Runner.cpp in Sources */,
 				C969A6BB1E54B941000620C8 /* Timer.cpp in Sources */,
+				C9F63EE81E76DA4C0025AC7C /* Meme.cpp in Sources */,
 				C969A6C01E54BB35000620C8 /* StructureController.cpp in Sources */,
 				C9DEADA21E4B726300948D3F /* IntNodeArray.cpp in Sources */,
 			);

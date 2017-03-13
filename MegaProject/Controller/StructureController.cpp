@@ -158,6 +158,22 @@ void StructureController :: testListTiming()
     cout << "The average speed for the getFromIndexFast method was: " << averageFast << " microseconds" << endl;
 }
 
+void StructureController :: testMemeQueue()
+{
+    Meme firstMeme("toddler fist with pinwheel!");
+    Queue<Meme> memeQueue;
+    memeQueue.add(firstMeme);
+    Meme secondMeme;
+    secondMeme.setDankness(8435);
+    memeQueue.enqueue(secondMeme);
+    memeQueue.remove(0);
+    Meme temp = memeQueue.dequeue();
+    cout << "This should be 8435 and is " << temp.getDankness() << endl;
+    
+    
+}
+
+
 
 
 

@@ -19,6 +19,7 @@
 #include "../Model/Stack.hpp"
 #include "../Model/Queue.hpp"
 #include "../Model/CircularList.hpp"
+#include "../Model/Meme.hpp"
 #include <string>
 
 #include <string>
@@ -39,6 +40,8 @@ private:
     void testListTiming();
     void testDestructor();
     void testDoubleLists();
+    void testMemeQueue();
+    void testNumberStack();
 public:
     StructureController();
     void start();

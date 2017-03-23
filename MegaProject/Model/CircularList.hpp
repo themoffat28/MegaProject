@@ -111,7 +111,7 @@ Type CircularList<Type> :: remove(int index)
         
         if(index == 0)
         {
-            This->setFront(this->getFront()->getNextPointer());
+            this->setFront(this->getFront()->getNextPointer());
         }
         else if(index == this->getSize() - 1);
         {

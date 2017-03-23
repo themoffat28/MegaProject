@@ -202,6 +202,24 @@ Type List<Type> :: getFromIndex(int index)
     return value;
 }
 
+template <class Type>
+bool List<Type> :: contains(Type findMe)
+{
+    bool isInList = false;
+    Node<Type> * current = front;
+    
+    for(int index = 0; index < size; index++)
+    {
+        if (current->getNodeData() == findMe)
+        {
+            current = current->getNodePointer();
+        }
+    }
+    
+    
+    return isInList;
+}
+
 
 
 #endif /* List_h */

@@ -103,6 +103,10 @@ Type Stack<Type> :: pop()
     {
         update->setNextPointer(nullptr);
     }
+    else
+    {
+        this->setFront(nullptr);
+    }
     
     delete this->getEnd();
     

@@ -6,4 +6,10 @@
 //  Copyright © 2017 Moffat, Braeden. All rights reserved.
 //
 
-#include "Runner.hpp"
+#include "StructureController.hpp"
+int main ()
+{
+    StructureController app;
+    app.start();
+    return 0;
+}

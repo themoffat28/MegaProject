@@ -10,6 +10,7 @@
 #define DoublyLinkedList_h
 
 #include "BiDirectionalNode.hpp"
+#include <assert.h>
 
 template <class Type>
 class DoublyLinkedList

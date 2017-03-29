@@ -97,8 +97,8 @@
 		C918BF101E48D62D0073CE41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C9A8E3E31E8BF820005655D9 /* CrimeData.cpp */,
 				C9A8E3E41E8BF820005655D9 /* CrimeData.hpp */,
+				C9A8E3E31E8BF820005655D9 /* CrimeData.cpp */,
 				C969A6B21E54B296000620C8 /* Array.hpp */,
 				C9656A8D1E648DE80040CDAE /* BiDirectionalNode.hpp */,
 				C9CDC74B1E67285800FB9F45 /* DoublyLinkedList.hpp */,

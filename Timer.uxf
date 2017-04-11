@@ -446,4 +446,114 @@ bg=black</panel_attributes>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;30.0;150.0;30.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1670</x>
+      <y>320</y>
+      <w>400</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>/Model :: Tree&lt;Type&gt;/
+-
+-size : int
+-height : int
+-complete : bool
+-balanced : bool
+-
++getSize() : int
++getHeight() : int
++isComplete() : bool
++isBalanced() : bool
+
++setSize(int size) : void
++setHeight(int height) : void
++setComplete(bool complete) : void
++setBalanced(bool balanced) : void
+
++inOrderTraversal() : void
++preOrderTraversal() : void
++postOrederTraversal() : void
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1100</x>
+      <y>560</y>
+      <w>470</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>BinarySearchTreeNode&lt;Type&gt;
+-
+-nodeData : Type(inherited)
+-rootPointer : TreeNode&lt;Type&gt;*
+-leftChildPointer : BinarySearchTreeNode&lt;Type&gt;*
+-rightChildPointer : BinarySearchTreeNode&lt;Type&gt;*
+-
++getRootPointer() : BinarySearchTreeNode&lt;Type&gt;*
++getLeftChildPointer() : BinarySearchTreeNode&lt;Type&gt;*
++getRightChildPointer() : BinarySearchTreeNode&lt;Type&gt;*
+
++setRootChildPointer(BinarySearchTreeNode&lt;Type&gt;* root) : void
++setLeftChildPointer(BinarySearchTreeNode&lt;Type&gt;* left) : void
++setRightChildPointer(BinarySearchTreeNode&lt;Type&gt;* right): void
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1630</x>
+      <y>700</y>
+      <w>460</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Model :: BinarySearchTree&lt;Type&gt;
+-
+-root : BinarySearchTreeNode&lt;Type&gt;*
+-size : int (inherited)
+-height : int (inherited)
+-complete : bool (inherited)
+-balanced : bool (inherited)
+-
++BinarySearchTree() : constructor
++~BinarySearchTree() : destructor
+
++getRoot() : BinarySearchTreeNode&lt;Type&gt;*
++setRoot(BinarySearchTreeNode&lt;Type&gt;*root) : void
+
++calculateSize(BinarySearchTreeNode&lt;Type&gt;*) : int
+
++inOrderTraversal(BinarySearchTreeNode&lt;Type&gt;*) : void
++preOrderTraversal(BinarySearchTreeNode&lt;Type&gt;*) : void
++postOrederTraversal(BinarySearchTreeNode&lt;Type&gt;*) : void
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1850</x>
+      <y>630</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1560</x>
+      <y>660</y>
+      <w>90</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=black
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;40.0</additional_attributes>
+  </element>
 </diagram>

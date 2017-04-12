@@ -492,6 +492,9 @@ bg=light_gray</panel_attributes>
 -leftChildPointer : BinarySearchTreeNode&lt;Type&gt;*
 -rightChildPointer : BinarySearchTreeNode&lt;Type&gt;*
 -
++BinarySearchTreeNode() : constructor
++~BinarySearchTreeNode() : destructor
+
 +getRootPointer() : BinarySearchTreeNode&lt;Type&gt;*
 +getLeftChildPointer() : BinarySearchTreeNode&lt;Type&gt;*
 +getRightChildPointer() : BinarySearchTreeNode&lt;Type&gt;*
@@ -508,7 +511,7 @@ bg=magenta</panel_attributes>
       <x>1630</x>
       <y>700</y>
       <w>460</w>
-      <h>280</h>
+      <h>300</h>
     </coordinates>
     <panel_attributes>Model :: BinarySearchTree&lt;Type&gt;
 -

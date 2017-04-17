@@ -16,6 +16,7 @@ class BinarySearchTreeNode : public Node<Type>
 {
 private:
     BinarySearchTreeNode<Type> * root;
+    BinarySearchTreeNode<Type> * root;
     BinarySearchTreeNode<Type> * leftChild;
     BinarySearchTreeNode<Type> * rightChild;
 public:
@@ -32,7 +33,14 @@ public:
 };
 
 template <class Type>
-BinarySearchTreeNode<Type> :: BinarySearchTreeNode()
+BinarySearchTreeNode<Type> :: ~BinarySearchTreeNode()
+{
+    delete leftChild;
+    delete rightChild;
+}
+
+template <class Type>
+BinarySearchTreeNode<Type> :: BinarySearchTreeNode() : Node<Type>()
 {
     this->root = nullptr;
     this->rightChild = nullptr;

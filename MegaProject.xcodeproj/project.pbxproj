@@ -57,7 +57,7 @@
 		C9F63EE71E76DA4C0025AC7C /* Meme.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Meme.hpp; path = Model/Meme.hpp; sourceTree = "<group>"; };
 		C9FFE9CF1E9D1EB400CC1C86 /* BinarySearchTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTreeNode.hpp; path = Model/BinarySearchTreeNode.hpp; sourceTree = "<group>"; };
 		C9FFE9D01E9D251100CC1C86 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Tree.hpp; path = Model/Tree.hpp; sourceTree = "<group>"; };
-		C9FFE9D11E9D2A9200CC1C86 /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryTreeNode.h; path = Model/BinaryTreeNode.h; sourceTree = "<group>"; };
+		C9FFE9D11E9D2A9200CC1C86 /* BinarySearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTree.h; path = Model/BinarySearchTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 		C918BF101E48D62D0073CE41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C9FFE9D11E9D2A9200CC1C86 /* BinaryTreeNode.h */,
+				C9FFE9D11E9D2A9200CC1C86 /* BinarySearchTree.h */,
 				C9FFE9CF1E9D1EB400CC1C86 /* BinarySearchTreeNode.hpp */,
 				C9A8E3E41E8BF820005655D9 /* CrimeData.hpp */,
 				C9A8E3E31E8BF820005655D9 /* CrimeData.cpp */,

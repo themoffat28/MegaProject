@@ -20,6 +20,7 @@
 #include "../Model/Queue.hpp"
 #include "../Model/CircularList.hpp"
 #include "../Model/Meme.hpp"
+#include "BinarySearchTree.h"
 #include <string>
 
 #include <string>
@@ -42,6 +43,7 @@ private:
     void testDoubleLists();
     void testMemeQueue();
     void testNumberStack();
+    void testBinarySearchTreeOperations();
 public:
     StructureController();
     void start();

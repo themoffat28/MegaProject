@@ -456,24 +456,21 @@ bg=black</panel_attributes>
     </coordinates>
     <panel_attributes>/Model :: Tree&lt;Type&gt;/
 -
--size : int
--height : int
--complete : bool
--balanced : bool
--
+INFORMATIONAL METHODS:
 +getSize() : int
 +getHeight() : int
 +isComplete() : bool
 +isBalanced() : bool
 
-+setSize(int size) : void
-+setHeight(int height) : void
-+setComplete(bool complete) : void
-+setBalanced(bool balanced) : void
-
+TRAVERSALS:
 +inOrderTraversal() : void
 +preOrderTraversal() : void
-+postOrederTraversal() : void
++postOrderTraversal() : void
+
+DATA OPERATIONS:
++insert(Type) : void
++contains(Type) : bool
++remove(Type) : void
 bg=light_gray</panel_attributes>
     <additional_attributes/>
   </element>
@@ -516,10 +513,6 @@ bg=magenta</panel_attributes>
     <panel_attributes>Model :: BinarySearchTree&lt;Type&gt;
 -
 -root : BinarySearchTreeNode&lt;Type&gt;*
--size : int (inherited)
--height : int (inherited)
--complete : bool (inherited)
--balanced : bool (inherited)
 -
 +BinarySearchTree() : constructor
 +~BinarySearchTree() : destructor
@@ -527,7 +520,10 @@ bg=magenta</panel_attributes>
 +getRoot() : BinarySearchTreeNode&lt;Type&gt;*
 +setRoot(BinarySearchTreeNode&lt;Type&gt;*root) : void
 
-+calculateSize(BinarySearchTreeNode&lt;Type&gt;*) : int
+RECURSIVE HELPER METHODS
+#calculateSize(BinarySearchTreeNode&lt;Type&gt;*) : int
+#calculateHeight(BinarySearchTreeNode&lt;Type&gt;*) : int
+
 
 +inOrderTraversal(BinarySearchTreeNode&lt;Type&gt;*) : void
 +preOrderTraversal(BinarySearchTreeNode&lt;Type&gt;*) : void

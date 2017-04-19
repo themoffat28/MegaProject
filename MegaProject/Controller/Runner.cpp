@@ -7,7 +7,7 @@
 //
 
 #include "StructureController.hpp"
-int main ()
+int main()
 {
     StructureController app;
     app.start();

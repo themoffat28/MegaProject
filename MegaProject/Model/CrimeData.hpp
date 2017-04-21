@@ -10,6 +10,9 @@
 #define CrimeData_hpp
 
 #include <string>
+#include <cmath>
+#include <sstream>
+
 using namespace std;
 
 class CrimeData
@@ -89,6 +92,8 @@ public:
     bool operator < (const CrimeData & other);
     bool operator > (const CrimeData & other);
     bool operator == (const CrimeData & other);
+    
+    friend ostream & operator << (ostream & outputStream, const CrimeData & outputData);
 };
 
 #endif /* CrimeData_hpp */

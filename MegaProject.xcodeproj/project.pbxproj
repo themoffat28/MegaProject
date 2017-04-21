@@ -100,6 +100,7 @@
 		C918BF101E48D62D0073CE41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C91BFC8F1EA7B18100E789E8 /* AVLTree.hpp */,
 				C9FFE9D11E9D2A9200CC1C86 /* BinarySearchTree.h */,
 				C9FFE9CF1E9D1EB400CC1C86 /* BinarySearchTreeNode.hpp */,
 				C9A8E3E41E8BF820005655D9 /* CrimeData.hpp */,
@@ -120,7 +121,6 @@
 				C969A6B91E54B941000620C8 /* Timer.cpp */,
 				C969A6BA1E54B941000620C8 /* Timer.hpp */,
 				C918BF041E48D40B0073CE41 /* Products */,
-				C91BFC8F1EA7B18100E789E8 /* AVLTree.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";

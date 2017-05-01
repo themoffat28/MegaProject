@@ -48,6 +48,8 @@
 		C9A8E3DE1E8BF729005655D9 /* StructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StructureController.hpp; path = Controller/StructureController.hpp; sourceTree = "<group>"; };
 		C9A8E3E31E8BF820005655D9 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Model/CrimeData.cpp; sourceTree = "<group>"; };
 		C9A8E3E41E8BF820005655D9 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Model/CrimeData.hpp; sourceTree = "<group>"; };
+		C9BFAA821EB77A4700119BFF /* HashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashTable.hpp; path = Model/HashTable.hpp; sourceTree = "<group>"; };
+		C9BFAA831EB784CD00119BFF /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashNode.hpp; path = Model/HashNode.hpp; sourceTree = "<group>"; };
 		C9CDC74B1E67285800FB9F45 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		C9CDC74C1E672E5900FB9F45 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
 		C9CDC74D1E672F0300FB9F45 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
@@ -101,13 +103,15 @@
 			isa = PBXGroup;
 			children = (
 				C91BFC8F1EA7B18100E789E8 /* AVLTree.hpp */,
+				C969A6B21E54B296000620C8 /* Array.hpp */,
+				C9656A8D1E648DE80040CDAE /* BiDirectionalNode.hpp */,
 				C9FFE9D11E9D2A9200CC1C86 /* BinarySearchTree.h */,
 				C9FFE9CF1E9D1EB400CC1C86 /* BinarySearchTreeNode.hpp */,
 				C9A8E3E41E8BF820005655D9 /* CrimeData.hpp */,
 				C9A8E3E31E8BF820005655D9 /* CrimeData.cpp */,
-				C969A6B21E54B296000620C8 /* Array.hpp */,
-				C9656A8D1E648DE80040CDAE /* BiDirectionalNode.hpp */,
 				C9CDC74B1E67285800FB9F45 /* DoublyLinkedList.hpp */,
+				C9BFAA831EB784CD00119BFF /* HashNode.hpp */,
+				C9BFAA821EB77A4700119BFF /* HashTable.hpp */,
 				C9F63EE61E76DA4C0025AC7C /* Meme.cpp */,
 				C9F63EE71E76DA4C0025AC7C /* Meme.hpp */,
 				C9FFE9D01E9D251100CC1C86 /* Tree.hpp */,

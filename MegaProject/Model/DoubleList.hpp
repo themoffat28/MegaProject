@@ -173,4 +173,5 @@ int DoubleList<Type> :: nextIndexOf(Type value, int position)
 
 
 
+
 #endif /* DoubleList_h */
